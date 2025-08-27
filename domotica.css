@@ -1,21 +1,41 @@
-body {
-  text-align: center;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 10px;
-}
-
-h3 {
-  margin-bottom: 20px;
-}
-
-img {
-  max-width: 90%;
-  height: auto;
-  margin: 8px 0;
-}
-
 a {
-  display: block;
-  text-decoration: none;
+  display: inline-block;
+  width: 150px;  /* regola a piacere */
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 10px;
+}
+
+.rele1[href*="on"] { background-image: url("https://i.postimg.cc/MZ1fLrmd/1-SIRENA-ON.png"); }
+.rele1[href*="off"] { background-image: url("https://i.postimg.cc/TYG5vqkG/1-SIRENA-OFF.png"); }
+
+.rele2[href*="on"] { background-image: url("https://i.postimg.cc/BQgLSLyF/2-VUOTO-ON.png"); }
+.rele2[href*="off"] { background-image: url("https://i.postimg.cc/D0QWb8wt/2-VUOTO-OFF.png"); }
+
+.rele3[href*="on"] { background-image: url("https://i.postimg.cc/1XFh3qJZ/3-ANTIFURTO-ON.png"); }
+.rele3[href*="off"] { background-image: url("https://i.postimg.cc/gJQbpDyD/3-ANTIFURTO-OFF.png"); }
+
+.rele4[href*="on"] { background-image: url("https://i.postimg.cc/BQgLSLyF/2-VUOTO-ON.png"); }
+.rele4[href*="off"] { background-image: url("https://i.postimg.cc/D0QWb8wt/2-VUOTO-OFF.png"); }
+
+.rele5[href*="on"] { background-image: url("https://i.postimg.cc/3xfkpM3J/5-BLUETOOTH-ON.png"); }
+.rele5[href*="off"] { background-image: url("https://i.postimg.cc/QddBHNGy/5-BLUETOOTH-OFF.png"); }
+
+.rele6[href*="on"] { background-image: url("https://i.postimg.cc/MGhXPycC/6-SWITCH-ATX-ON.png"); }
+.rele6[href*="off"] { background-image: url("https://i.postimg.cc/JhyG5Th3/6-SWITCH-ATX-OFF.png"); }
+
+.rele7[href*="on"] { background-image: url("https://i.postimg.cc/sxzxys4K/7-COMPUTER-ON.png"); }
+.rele7[href*="off"] { background-image: url("https://i.postimg.cc/MTVHhvVv/7-COMPUTER-OFF.png"); }
+
+.rele8[href*="on"] { background-image: url("https://i.postimg.cc/FFb1pkh6/8-SPINA-ON.png"); }
+.rele8[href*="off"] { background-image: url("https://i.postimg.cc/zvkBG6dN/8-SPINA-OFF.png"); }
+
+/* … e così via per tutti … */
+
+.logout {
+  width: 100px;
+  height: 100px;
+  background-image: url("https://i.postimg.cc/B6nKrXQM/ESCI.png");
 }
