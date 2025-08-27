@@ -5,61 +5,43 @@ body {
     background: #f0f0f0;
 }
 
-h2 {
-    color: #333;
+h2 { color: #333; }
+
+.rele1, .rele2, .rele3, .rele4, .rele5, .rele6, .rele7, .rele8, .logout {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-/* Pulsanti dei relè */
-.rele1 { display: block; width: 100px; height: 100px; margin: 10px auto;
-    background: url('https://i.postimg.cc/MZ1fLrmd/1-SIRENA-ON.png') no-repeat center center;
-    background-size: contain;
-}
+/* Relè ON/OFF */
+.rele1 { background-image: url('https://i.postimg.cc/MZ1fLrmd/1-SIRENA-ON.png'); }
 .rele1.off { background-image: url('https://i.postimg.cc/TYG5vqkG/1-SIRENA-OFF.png'); }
 
-.rele2 { display: block; width: 100px; height: 100px; margin: 10px auto;
-    background: url('https://i.postimg.cc/BQgLSLyF/2-VUOTO-ON.png') no-repeat center center;
-    background-size: contain;
-}
+.rele2 { background-image: url('https://i.postimg.cc/BQgLSLyF/2-VUOTO-ON.png'); }
 .rele2.off { background-image: url('https://i.postimg.cc/D0QWb8wt/2-VUOTO-OFF.png'); }
 
-.rele3 { display: block; width: 100px; height: 100px; margin: 10px auto;
-    background: url('https://i.postimg.cc/1XFh3qJZ/3-ANTIFURTO-ON.png') no-repeat center center;
-    background-size: contain;
-}
+.rele3 { background-image: url('https://i.postimg.cc/1XFh3qJZ/3-ANTIFURTO-ON.png'); }
 .rele3.off { background-image: url('https://i.postimg.cc/gJQbpDyD/1-ANTIFURTO-OFF.png'); }
 
-.rele4 { display: block; width: 100px; height: 100px; margin: 10px auto;
-    background: url('https://i.postimg.cc/BQgLSLyF/2-VUOTO-ON.png') no-repeat center center;
-    background-size: contain;
-}
+.rele4 { background-image: url('https://i.postimg.cc/BQgLSLyF/2-VUOTO-ON.png'); }
 .rele4.off { background-image: url('https://i.postimg.cc/D0QWb8wt/2-VUOTO-OFF.png'); }
 
-.rele5 { display: block; width: 100px; height: 100px; margin: 10px auto;
-    background: url('https://i.postimg.cc/3xfkpM3J/5-BLUETOOTH-ON.png') no-repeat center center;
-    background-size: contain;
-}
+.rele5 { background-image: url('https://i.postimg.cc/3xfkpM3J/5-BLUETOOTH-ON.png'); }
 .rele5.off { background-image: url('https://i.postimg.cc/QddBHNGy/5-BLUETOOTH-OFF.png'); }
 
-.rele6 { display: block; width: 100px; height: 100px; margin: 10px auto;
-    background: url('https://i.postimg.cc/MGhXPycC/6-SWITCH-ATX-ON.png') no-repeat center center;
-    background-size: contain;
-}
+.rele6 { background-image: url('https://i.postimg.cc/MGhXPycC/6-SWITCH-ATX-ON.png'); }
 .rele6.off { background-image: url('https://i.postimg.cc/JhyG5Th3/6-SWITCH-ATX-OFF.png'); }
 
-.rele7 { display: block; width: 100px; height: 100px; margin: 10px auto;
-    background: url('https://i.postimg.cc/sxzxys4K/7-COMPUTER-ON.png') no-repeat center center;
-    background-size: contain;
-}
+.rele7 { background-image: url('https://i.postimg.cc/sxzxys4K/7-COMPUTER-ON.png'); }
 .rele7.off { background-image: url('https://i.postimg.cc/MTVHhvVv/7-COMPUTER-OFF.png'); }
 
-.rele8 { display: block; width: 100px; height: 100px; margin: 10px auto;
-    background: url('https://i.postimg.cc/FFb1pkh6/8-SPINA-ON.png') no-repeat center center;
-    background-size: contain;
-}
+.rele8 { background-image: url('https://i.postimg.cc/FFb1pkh6/8-SPINA-ON.png'); }
 .rele8.off { background-image: url('https://i.postimg.cc/zvkBG6dN/8-SPINA-OFF.png'); }
 
 /* Logout */
-.logout { display: block; width: 100px; height: 100px; margin: 20px auto;
-    background: url('https://i.postimg.cc/B6nKrXQM/ESCI.png') no-repeat center center;
-    background-size: contain;
-}
+.logout { background-image: url('https://i.postimg.cc/B6nKrXQM/ESCI.png'); }
+
