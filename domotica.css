@@ -8,8 +8,8 @@ a {
   margin: 10px;
 }
 
-.rele1[href*="on"] { background-image: url("https://i.postimg.cc/MZ1fLrmd/1-SIRENA-ON.png"); }
-.rele1[href*="off"] { background-image: url("https://i.postimg.cc/TYG5vqkG/1-SIRENA-OFF.png"); }
+.rele1[href*="on"] { background-image: url("https://i.postimg.cc/TYG5vqkG/1-SIRENA-OFF.png"); }
+.rele1[href*="off"] { background-image: url("https://i.postimg.cc/MZ1fLrmd/1-SIRENA-ON.png"); }
 
 .rele2[href*="on"] { background-image: url("https://i.postimg.cc/BQgLSLyF/2-VUOTO-ON.png"); }
 .rele2[href*="off"] { background-image: url("https://i.postimg.cc/D0QWb8wt/2-VUOTO-OFF.png"); }
