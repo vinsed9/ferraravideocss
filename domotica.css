@@ -1,47 +1,82 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
-    background: #f0f0f0;
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
 }
 
-h2 { color: #333; }
-
-.rele1, .rele2, .rele3, .rele4, .rele5, .rele6, .rele7, .rele8, .logout {
-    display: block;
-    width: 100px;
-    height: 100px;
-    margin: 10px auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+.container {
+  width: 100%;
+  max-width: 600px;
 }
 
-/* Relè ON/OFF */
-.rele1 { background-image: url('https://i.postimg.cc/MZ1fLrmd/1-SIRENA-ON.png'); }
-.rele1.off { background-image: url('https://i.postimg.cc/TYG5vqkG/1-SIRENA-OFF.png'); }
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
 
-.rele2 { background-image: url('https://i.postimg.cc/BQgLSLyF/2-VUOTO-ON.png'); }
-.rele2.off { background-image: url('https://i.postimg.cc/D0QWb8wt/2-VUOTO-OFF.png'); }
+/* RIGA PULSANTI */
+.switch-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e8e8e8;
+  margin: 8px 0;
+  padding: 12px 16px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-weight: bold;
+  font-size: 1.1em;
+}
 
-.rele3 { background-image: url('https://i.postimg.cc/1XFh3qJZ/3-ANTIFURTO-ON.png'); }
-.rele3.off { background-image: url('https://i.postimg.cc/gJQbpDyD/1-ANTIFURTO-OFF.png'); }
+.switch-row a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
 
-.rele4 { background-image: url('https://i.postimg.cc/BQgLSLyF/2-VUOTO-ON.png'); }
-.rele4.off { background-image: url('https://i.postimg.cc/D0QWb8wt/2-VUOTO-OFF.png'); }
+/* IMMAGINI RELAIS (ON/OFF) */
+#relais1.on  { background: url('https://i.postimg.cc/MZ1fLrmd/1-SIRENA-ON.png') no-repeat right center / 60px; }
+#relais1.off { background: url('https://i.postimg.cc/TYG5vqkG/1-SIRENA-OFF.png') no-repeat right center / 60px; }
 
-.rele5 { background-image: url('https://i.postimg.cc/3xfkpM3J/5-BLUETOOTH-ON.png'); }
-.rele5.off { background-image: url('https://i.postimg.cc/QddBHNGy/5-BLUETOOTH-OFF.png'); }
+#relais2.on  { background: url('https://i.postimg.cc/BQgLSLyF/2-VUOTO-ON.png') no-repeat right center / 60px; }
+#relais2.off { background: url('https://i.postimg.cc/D0QWb8wt/2-VUOTO-OFF.png') no-repeat right center / 60px; }
 
-.rele6 { background-image: url('https://i.postimg.cc/MGhXPycC/6-SWITCH-ATX-ON.png'); }
-.rele6.off { background-image: url('https://i.postimg.cc/JhyG5Th3/6-SWITCH-ATX-OFF.png'); }
+#relais3.on  { background: url('https://i.postimg.cc/1XFh3qJZ/3-ANTIFURTO-ON.png') no-repeat right center / 60px; }
+#relais3.off { background: url('https://i.postimg.cc/gJQbpDyD/1-ANTIFURTO-OFF.png') no-repeat right center / 60px; }
 
-.rele7 { background-image: url('https://i.postimg.cc/sxzxys4K/7-COMPUTER-ON.png'); }
-.rele7.off { background-image: url('https://i.postimg.cc/MTVHhvVv/7-COMPUTER-OFF.png'); }
+#relais4.on  { background: url('https://i.postimg.cc/BQgLSLyF/2-VUOTO-ON.png') no-repeat right center / 60px; }
+#relais4.off { background: url('https://i.postimg.cc/D0QWb8wt/2-VUOTO-OFF.png') no-repeat right center / 60px; }
 
-.rele8 { background-image: url('https://i.postimg.cc/FFb1pkh6/8-SPINA-ON.png'); }
-.rele8.off { background-image: url('https://i.postimg.cc/zvkBG6dN/8-SPINA-OFF.png'); }
+#relais5.on  { background: url('https://i.postimg.cc/3xfkpM3J/5-BLUETOOTH-ON.png') no-repeat right center / 60px; }
+#relais5.off { background: url('https://i.postimg.cc/QddBHNGy/5-BLUETOOTH-OFF.png') no-repeat right center / 60px; }
 
-/* Logout */
-.logout { background-image: url('https://i.postimg.cc/B6nKrXQM/ESCI.png'); }
+#relais6.on  { background: url('https://i.postimg.cc/MGhXPycC/6-SWITCH-ATX-ON.png') no-repeat right center / 60px; }
+#relais6.off { background: url('https://i.postimg.cc/JhyG5Th3/6-SWITCH-ATX-OFF.png') no-repeat right center / 60px; }
+
+#relais7.on  { background: url('https://i.postimg.cc/sxzxys4K/7-COMPUTER-ON.png') no-repeat right center / 60px; }
+#relais7.off { background: url('https://i.postimg.cc/MTVHhvVv/7-COMPUTER-OFF.png') no-repeat right center / 60px; }
+
+#relais8.on  { background: url('https://i.postimg.cc/FFb1pkh6/8-SPINA-ON.png') no-repeat right center / 60px; }
+#relais8.off { background: url('https://i.postimg.cc/zvkBG6dN/8-SPINA-OFF.png') no-repeat right center / 60px; }
+
+/* PULSANTE ESCI */
+#logout {
+  display: block;
+  text-align: center;
+  background: red;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 6px;
+  text-decoration: none;
+}
 
